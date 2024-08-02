@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    flex-direction: column;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    color: #fff;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+#home-link {
+    margin-right: left;
+}
+
+.logo {
+    width: 80px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+main {    
+    padding: 2rem;
+    min-height: 90vh;
+}
+
+#place-details {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#reviews {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+}
+
+.review-user {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review-comment {
+    margin-bottom: 10px;
+}
+
+.review-rating {
+    margin-top: 20px;
+}
+
+#add-review {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+#review-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#review-text, #score-list, #review-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#review-form button {
+    font-size: 16px;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+#review-form button:hover {
+    background-color: black;
+}
+
+#title-available-places {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+#filter {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+#places-list {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+
+.place-card {
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    max-width: 210px;
+    align-content: baseline;
+    height: auto;    
+}
+
+.place-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.place-price {
+    font-size: smaller;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.place-location {
+    font-size: smaller;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.details-button {
+    padding: 7px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.details-button:hover {
+    background-color: black;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#login-text, #login-form button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    font-size: 16px;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
