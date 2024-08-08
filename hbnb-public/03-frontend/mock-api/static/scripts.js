@@ -164,3 +164,20 @@ function populatePlaceDetails(place) {
     document.querySelector('.place-info .Amenities').textContent = place.amenities.join(', ');
     document.querySelector('.place-image-large').src = place.image_url;
 }
+
+
+
+document.getElementById('country-filter').addEventListener('change', function() {
+    const selectedCountry = this.value;
+    const placeCards = document.querySelectorAll('.place-card');
+
+    placeCards.forEach(card => {
+        const cardCountry = card.getAttribute('data-country');
+
+        if (selectedCountry === 'all' || cardCountry === selectedCountry) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
